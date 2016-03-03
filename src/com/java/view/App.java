@@ -1,5 +1,6 @@
 package com.java.view;
 
+import com.java.controller.testAbstract;
 import com.java.listener.myListener;
 
 import javax.swing.*;
@@ -19,5 +20,22 @@ public class App {
         einfamilienhausBtn.addMouseListener(new myListener());
         jFrame.add(jPanel);
         jFrame.setVisible(true);
+
+        jFrame.add(new testAbstract() {
+            @Override
+            public void calculate() {
+
+            }
+
+            @Override
+            public void something() {
+
+            }
+
+            @Override
+            public void somethingDifferent() {
+
+            }
+        });
     }
 }

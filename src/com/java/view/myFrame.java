@@ -1,5 +1,7 @@
 package com.java.view;
 
+import com.java.controller.testAbstract;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -9,5 +11,8 @@ import java.awt.*;
 public class myFrame extends JFrame {
     public myFrame(String title) throws HeadlessException {
         super(title);
+    }
+
+    public void add(testAbstract testAbstract) {
     }
 }
