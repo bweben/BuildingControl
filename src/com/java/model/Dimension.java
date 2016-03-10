@@ -1,3 +1,5 @@
+package com.java.model;
+
 public class Dimension {
 
 	private double x;

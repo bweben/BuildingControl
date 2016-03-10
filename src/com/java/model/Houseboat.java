@@ -1,3 +1,5 @@
+package com.java.model;
+
 public class Houseboat extends House {
 
 	private Motor motor;

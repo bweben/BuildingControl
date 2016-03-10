@@ -1,3 +1,5 @@
+package com.java.model;
+
 public class Oilheater implements Heater {
 
 	private double tankVolume;
@@ -12,7 +14,7 @@ public class Oilheater implements Heater {
 		throw new UnsupportedOperationException();
 	}
 
-	private double calculatePower() {
+	public double calculatePower() {
 		// TODO - implement Oilheater.calculatePower
 		throw new UnsupportedOperationException();
 	}

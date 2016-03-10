@@ -1,3 +1,5 @@
+package com.java.model;
+
 import java.util.*;
 
 public class Skyscraper extends Building {

@@ -1,9 +1,13 @@
+package com.java.model;
+
+import java.util.ArrayList;
+
 public abstract class House extends Building {
 
-	private Person owner;
-	private int rooms;
-	private Location location;
-	private Person renters;
+	protected Person owner;
+	protected int rooms;
+	protected Location location;
+	protected ArrayList<Person> renters;
 
 	public Person getOwner() {
 		return this.owner;
@@ -32,30 +36,31 @@ public abstract class House extends Building {
 		throw new UnsupportedOperationException();
 	}
 
-	public Person getRenters() {
+	public ArrayList<Person> getRenters() {
 		return this.renters;
 	}
 
 	/**
-	 * 
+	 *
 	 * @param renters
 	 */
-	public void setRenters(Person renters) {
+	public void setRenters(ArrayList<Person> renters) {
 		this.renters = renters;
 	}
 
-	public void getAttribute() {
-		// TODO - implement House.getAttribute
-		throw new UnsupportedOperationException();
+	public void setOwner(Person owner) {
+		this.owner = owner;
 	}
 
-	/**
-	 * 
-	 * @param attribute
-	 */
-	public void setAttribute(int attribute) {
-		// TODO - implement House.setAttribute
-		throw new UnsupportedOperationException();
+	public void setRooms(int rooms) {
+		this.rooms = rooms;
 	}
 
+	public Location getLocation() {
+		return location;
+	}
+
+	public void setLocation(Location location) {
+		this.location = location;
+	}
 }

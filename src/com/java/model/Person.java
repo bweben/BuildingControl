@@ -1,3 +1,5 @@
+package com.java.model;
+
 public class Person {
 
 	private String name;

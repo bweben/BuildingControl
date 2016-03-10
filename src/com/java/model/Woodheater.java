@@ -1,3 +1,5 @@
+package com.java.model;
+
 public class Woodheater implements Heater {
 
 	private int woodUsage;
@@ -11,7 +13,7 @@ public class Woodheater implements Heater {
 		throw new UnsupportedOperationException();
 	}
 
-	private double calculatePower() {
+	public double calculatePower() {
 		// TODO - implement Woodheater.calculatePower
 		throw new UnsupportedOperationException();
 	}

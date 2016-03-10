@@ -1,3 +1,5 @@
+package com.java.model;
+
 public interface Heater {
 
 	abstract double calculatePower();

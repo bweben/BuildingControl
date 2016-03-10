@@ -1,3 +1,5 @@
+package com.java.model;
+
 public class Standardheater implements Heater {
 
 	/**
@@ -9,7 +11,7 @@ public class Standardheater implements Heater {
 		throw new UnsupportedOperationException();
 	}
 
-	private double calculatePower() {
+	public double calculatePower() {
 		// TODO - implement Standardheater.calculatePower
 		throw new UnsupportedOperationException();
 	}
