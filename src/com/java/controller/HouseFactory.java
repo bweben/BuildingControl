@@ -40,7 +40,11 @@ public class HouseFactory {
             flat.setRenters(createRenters());
 
         } else if (houseType.equalsIgnoreCase("Familyhouse")) {
-
+            Familyhouse familyhouse = new Familyhouse();
+            familyhouse.setRenters(createRenters());
+            familyhouse.setLocation(createLocation());
+            familyhouse.setOwner(createPerson());
+            familyhouse.setRooms(5);
         }
 
         return null;
