@@ -15,4 +15,8 @@ public class Houseboat extends House {
 		throw new UnsupportedOperationException();
 	}
 
+	@Override
+	public String getTypeName() {
+		return "Houseboat";
+	}
 }

@@ -13,4 +13,7 @@ public class Building {
 		return this.heater;
 	}
 
+	public String getTypeName() {
+		return "Building";
+	}
 }

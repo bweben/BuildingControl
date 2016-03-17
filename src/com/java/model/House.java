@@ -63,4 +63,9 @@ public abstract class House extends Building {
 	public void setLocation(Location location) {
 		this.location = location;
 	}
+
+	@Override
+	public String getTypeName() {
+		return "House";
+	}
 }

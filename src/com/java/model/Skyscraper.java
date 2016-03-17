@@ -20,4 +20,8 @@ public class Skyscraper extends Building {
 		throw new UnsupportedOperationException();
 	}
 
+	@Override
+	public String getTypeName() {
+		return "Skyscraper";
+	}
 }

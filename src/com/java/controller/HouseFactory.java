@@ -38,16 +38,16 @@ public class HouseFactory {
             flat.setOwner(createPerson());
             flat.setLocation(createLocation());
             flat.setRenters(createRenters());
+            return flat;
 
-        } else if (houseType.equalsIgnoreCase("Familyhouse")) {
+        } else {
             Familyhouse familyhouse = new Familyhouse();
             familyhouse.setRenters(createRenters());
             familyhouse.setLocation(createLocation());
             familyhouse.setOwner(createPerson());
             familyhouse.setRooms(5);
+            return familyhouse;
         }
-
-        return null;
     }
 
     private ArrayList<Person> createRenters() {
