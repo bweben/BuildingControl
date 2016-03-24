@@ -1,4 +1,6 @@
-package com.java.model;
+package com.java.interfaces;
+
+import com.java.model.House;
 
 public interface HeaterInterface {
 

@@ -1,5 +1,7 @@
 package com.java.model;
 
+import com.java.interfaces.HeaterInterface;
+
 public class Oilheater implements HeaterInterface {
 
 	private double tankVolume;

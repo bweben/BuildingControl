@@ -1,5 +1,6 @@
 package com.java.view;
 
+import com.java.interfaces.Observer;
 import com.java.listener.ButtonListener;
 import com.java.model.Building;
 import com.java.model.Game;
@@ -13,11 +14,16 @@ import java.util.ArrayList;
  */
 public class BuildingsPanel extends JPanel {
     private ArrayList<BuildingButton> buildingButtons;
+    private Observer observer;
 
     public BuildingsPanel() {
         super();
         buildingButtons = new ArrayList<BuildingButton>();
         init();
+    }
+
+    public void attach(Observer observer) {
+        this.observer = observer;
     }
 
     private void init() {
@@ -30,5 +36,9 @@ public class BuildingsPanel extends JPanel {
             buildingButtons.add(button);
             add(button);
         }
+    }
+
+    public void refresh() {
+
     }
 }
