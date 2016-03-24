@@ -3,6 +3,7 @@ package com.java.view;
 import com.java.interfaces.Observer;
 import com.java.listener.ButtonListener;
 import com.java.model.Building;
+import com.java.model.BuildingsPanelObserver;
 import com.java.model.Game;
 
 import javax.swing.*;
@@ -19,6 +20,7 @@ public class BuildingsPanel extends JPanel {
     public BuildingsPanel() {
         super();
         buildingButtons = new ArrayList<BuildingButton>();
+        new BuildingsPanelObserver(this);
         init();
     }
 
@@ -28,7 +30,12 @@ public class BuildingsPanel extends JPanel {
 
     private void init() {
         setLayout(new GridLayout(Game.getGameInstance().getBuildings().size() / 2,2));
+        refresh();
+    }
 
+    public void refresh() {
+        buildingButtons.clear();
+        removeAll();
         for (Building building : Game.getGameInstance().getBuildings()) {
             BuildingButton button = new BuildingButton();
             button.setBuilding(building);
@@ -36,9 +43,6 @@ public class BuildingsPanel extends JPanel {
             buildingButtons.add(button);
             add(button);
         }
-    }
-
-    public void refresh() {
-
+        repaint();
     }
 }

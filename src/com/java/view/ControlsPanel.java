@@ -18,5 +18,6 @@ public class ControlsPanel extends JPanel {
     private void init() {
         newBuilding = new JButton("new Building");
         newBuilding.addMouseListener(new NewBuildingListener());
+        add(newBuilding);
     }
 }
