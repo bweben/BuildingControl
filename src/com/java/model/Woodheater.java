@@ -1,6 +1,6 @@
 package com.java.model;
 
-public class Woodheater implements Heater {
+public class Woodheater implements HeaterInterface {
 
 	private int woodUsage;
 

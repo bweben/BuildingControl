@@ -3,13 +3,13 @@ package com.java.model;
 public class Building {
 
 	private Dimension dimension;
-	private Heater heater;
+	private HeaterInterface heater;
 
 	public Dimension getDimension() {
 		return this.dimension;
 	}
 
-	public Heater getHeater() {
+	public HeaterInterface getHeater() {
 		return this.heater;
 	}
 

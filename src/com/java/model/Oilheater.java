@@ -1,6 +1,6 @@
 package com.java.model;
 
-public class Oilheater implements Heater {
+public class Oilheater implements HeaterInterface {
 
 	private double tankVolume;
 	private int oilUsage;

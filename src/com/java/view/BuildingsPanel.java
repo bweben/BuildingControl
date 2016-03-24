@@ -1,5 +1,6 @@
 package com.java.view;
 
+import com.java.listener.ButtonListener;
 import com.java.model.Building;
 import com.java.model.Game;
 
@@ -15,17 +16,17 @@ public class BuildingsPanel extends JPanel {
 
     public BuildingsPanel() {
         super();
+        buildingButtons = new ArrayList<BuildingButton>();
         init();
     }
 
     private void init() {
         setLayout(new GridLayout(Game.getGameInstance().getBuildings().size() / 2,2));
 
-        buildingButtons = new ArrayList<BuildingButton>();
-
         for (Building building : Game.getGameInstance().getBuildings()) {
             BuildingButton button = new BuildingButton();
             button.setBuilding(building);
+            button.addMouseListener(new ButtonListener(building));
             buildingButtons.add(button);
             add(button);
         }
