@@ -9,6 +9,7 @@ import java.util.Random;
  * Created by Nathanael on 10.03.2016.
  */
 public class HouseFactory {
+    public static String[] HOUSES = {"Houseboat","Flat","Familyhouse"};
     private static HouseFactory houseFactory;
     private Random r;
 
@@ -23,8 +24,14 @@ public class HouseFactory {
         return houseFactory;
     }
 
+    @Deprecated
     public House getHouse(String houseType) {
-        if (houseType.equalsIgnoreCase("Houseboat")) {
+        Houses house = houseType.equalsIgnoreCase("Houseboat") ? Houses.HOUSEBOAT : houseType.equalsIgnoreCase("Flat") ? Houses.FLAT : Houses.FAMILYHOUSE;
+        return getHouse(house);
+    }
+
+    public House getHouse(Houses houseType) {
+        if (houseType == Houses.HOUSEBOAT) {
             Houseboat houseboat = new Houseboat();
             houseboat.setLocation(createLocation());
             houseboat.setOwner(createPerson());
@@ -32,7 +39,7 @@ public class HouseFactory {
             houseboat.setRenters(createRenters());
             return houseboat;
 
-        } else if (houseType.equalsIgnoreCase("Flat")) {
+        } else if (houseType == Houses.FLAT) {
             Flat flat = new Flat();
             flat.setRooms(5);
             flat.setOwner(createPerson());
