@@ -44,5 +44,6 @@ public class BuildingsPanel extends JPanel {
             add(button);
         }
         repaint();
+        doLayout();
     }
 }
