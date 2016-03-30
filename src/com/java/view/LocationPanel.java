@@ -21,6 +21,7 @@ public class LocationPanel extends JPanel implements PanelInterface {
         if (house != null) {
             refresh();
         }
+        add(address);
     }
 
     public void refresh() {
@@ -28,7 +29,7 @@ public class LocationPanel extends JPanel implements PanelInterface {
     }
 
     public void changeHouse(House house) {
-        refresh();
         this.house = house;
+        refresh();
     }
 }

@@ -41,6 +41,7 @@ public class DetailsPanel extends JPanel implements PanelInterface {
 
         add(rooms);
         add(houseType);
+        add(locationPan);
     }
 
     public void refresh() {

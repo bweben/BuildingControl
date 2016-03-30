@@ -73,7 +73,7 @@ public class HouseFactory {
 
     private Location createLocation() {
         Location location = new Location();
-        location.setAddress("Standard");
+        location.setAddress("Teststrasse 20, 1000 Test");
         location.setLatitude(55);
         location.setLongitude(55);
         return location;
