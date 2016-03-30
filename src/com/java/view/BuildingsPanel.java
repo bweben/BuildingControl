@@ -1,6 +1,7 @@
 package com.java.view;
 
 import com.java.interfaces.Observer;
+import com.java.interfaces.PanelInterface;
 import com.java.listener.ButtonListener;
 import com.java.model.Building;
 import com.java.model.BuildingsPanelObserver;
@@ -13,7 +14,7 @@ import java.util.ArrayList;
 /**
  * Created by Nathanael on 17.03.2016.
  */
-public class BuildingsPanel extends JPanel {
+public class BuildingsPanel extends JPanel implements PanelInterface {
     private ArrayList<BuildingButton> buildingButtons;
     private Observer observer;
 
@@ -28,7 +29,7 @@ public class BuildingsPanel extends JPanel {
         this.observer = observer;
     }
 
-    private void init() {
+    public void init() {
         setLayout(new GridLayout(Game.getGameInstance().getBuildings().size() / 2,2));
         refresh();
     }

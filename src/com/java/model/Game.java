@@ -16,7 +16,6 @@ public class Game {
 
     private Game() {
         buildings = new ArrayList<Building>();
-        temporaric();
     }
 
     public static Game getGameInstance() {
@@ -52,14 +51,5 @@ public class Game {
 
     public ArrayList<Building> getBuildings() {
         return buildings;
-    }
-
-    private void temporaric() {
-        //TODO remove this method after finishing the project
-        buildings.add(HouseFactory.getInstance().getHouse("Familyhouse"));
-        buildings.add(HouseFactory.getInstance().getHouse("Flat"));
-        buildings.add(HouseFactory.getInstance().getHouse("House"));
-        buildings.add(HouseFactory.getInstance().getHouse("Houseboat"));
-        buildings.add(HouseFactory.getInstance().getHouse("House"));
     }
 }
