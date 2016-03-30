@@ -9,7 +9,7 @@ import java.awt.event.MouseListener;
 /**
  * Created by Nathanael on 10.03.2016.
  */
-public class ButtonListener implements MouseListener, DetailsPanelObserver {
+public class ButtonListener implements MouseListener {
     private Building building;
 
     public ButtonListener(Building building) {
