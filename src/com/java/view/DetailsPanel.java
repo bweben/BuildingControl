@@ -1,5 +1,8 @@
 package com.java.view;
 
+import com.java.interfaces.Observer;
+import com.java.model.Building;
+import com.java.model.DetailsPanelObserver;
 import com.java.model.House;
 
 import javax.swing.*;
@@ -10,10 +13,14 @@ import javax.swing.*;
 
 public class DetailsPanel extends JPanel {
     private JLabel rooms;
+    private JLabel houseType;
     private House house;
+    private static Observer OBSERVER;
 
     public DetailsPanel() {
         super();
+        new DetailsPanelObserver(this,house);
+        init();
     }
 
     public DetailsPanel(House house) {
@@ -22,10 +29,30 @@ public class DetailsPanel extends JPanel {
     }
 
     private void init() {
-        rooms = new JLabel(String.valueOf(house.getRooms()));
+        rooms = new JLabel();
+        houseType = new JLabel();
+        if (house != null) {
+            refresh();
+        }
+        add(rooms);
+        add(houseType);
     }
 
-    public void addHouse(House house) {
-        this.house = house;
+    private void refresh() {
+        rooms.setText(String.valueOf(house.getRooms()));
+        houseType.setText(String.valueOf(house.getTypeName()));
+    }
+
+    public void changeBuilding(Building building) {
+        this.house = (House) building;
+        refresh();
+    }
+
+    public void attach(Observer observer) {
+        OBSERVER = observer;
+    }
+
+    public static DetailsPanelObserver getObserver() {
+        return (DetailsPanelObserver) OBSERVER;
     }
 }

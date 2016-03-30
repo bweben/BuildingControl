@@ -1,21 +1,29 @@
 package com.java.model;
 
+import com.java.interfaces.Observer;
 import com.java.view.BuildingsPanel;
 import com.java.view.DetailsPanel;
 
 /**
  * Created by natha on 29.03.2016.
  */
-public interface DetailsPanelObserver {
-    public DetailsPanelObserver(DetailsPanel detailsPanel) {
+public class DetailsPanelObserver extends Observer {
+    private Building building;
+
+    public DetailsPanelObserver(DetailsPanel detailsPanel,Building building) {
+        this.building = building;
         detailsPanel.attach(this);
         this.subject = detailsPanel;
-        Game.getGameInstance().attach(this);
     }
 
     @Override
     public void update() {
         DetailsPanel panel = (DetailsPanel) this.subject;
-        panel.changeHouse();
+        panel.changeBuilding(building);
+    }
+
+    public void update(Building building) {
+        this.building = building;
+        update();
     }
 }
