@@ -2,6 +2,12 @@ package com.java.model;
 
 public class Dimension {
 
+	public Dimension() {
+		x = 10;
+		y = 20;
+		z = 10;
+	}
+
 	private double x;
 	private double y;
 	private double z;

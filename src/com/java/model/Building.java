@@ -4,6 +4,10 @@ import com.java.interfaces.HeaterInterface;
 
 public class Building {
 
+	public Building() {
+		dimension = new Dimension();
+	}
+
 	private Dimension dimension;
 	private HeaterInterface heater;
 

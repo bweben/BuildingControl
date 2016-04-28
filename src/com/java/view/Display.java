@@ -1,5 +1,8 @@
 package com.java.view;
 
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
 /**
  * Created by Nathanael on 10.03.2016.
  */

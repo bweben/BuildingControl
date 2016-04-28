@@ -9,6 +9,10 @@ public abstract class House extends Building {
 	protected Location location;
 	protected ArrayList<Person> renters;
 
+	public House() {
+		super();
+	}
+
 	public Person getOwner() {
 		return this.owner;
 	}

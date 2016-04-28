@@ -41,7 +41,7 @@ public class HouseFactory {
 
         } else if (houseType == Houses.FLAT) {
             Flat flat = new Flat();
-            flat.setRooms(5);
+            flat.setRooms(r.nextInt(4));
             flat.setOwner(createPerson());
             flat.setLocation(createLocation());
             flat.setRenters(createRenters());
@@ -52,7 +52,7 @@ public class HouseFactory {
             familyhouse.setRenters(createRenters());
             familyhouse.setLocation(createLocation());
             familyhouse.setOwner(createPerson());
-            familyhouse.setRooms(5);
+            familyhouse.setRooms(r.nextInt(10));
             return familyhouse;
         }
     }

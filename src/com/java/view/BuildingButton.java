@@ -1,6 +1,7 @@
 package com.java.view;
 
 import com.java.model.Building;
+import com.java.model.House;
 
 import javax.swing.*;
 
@@ -20,6 +21,14 @@ public class BuildingButton extends JButton {
 
     public void setBuilding(Building building) {
         this.building = building;
+        setText(building.getTypeName());
+    }
+
+    public void setPersons() {
+        setText(building.getTypeName() + " Rooms: " + ((House)building).getRooms());
+    }
+
+    public void unsetPersons() {
         setText(building.getTypeName());
     }
 }

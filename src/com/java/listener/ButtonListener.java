@@ -1,7 +1,7 @@
 package com.java.listener;
 
 import com.java.model.Building;
-import com.java.model.DetailsPanelObserver;
+import com.java.view.BuildingButton;
 import com.java.view.DetailsPanel;
 
 import java.awt.event.MouseEvent;
@@ -35,11 +35,11 @@ public class ButtonListener implements MouseListener {
 
     @Override
     public void mouseEntered(MouseEvent e) {
-
+        ((BuildingButton) e.getSource()).setPersons();
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-
+        ((BuildingButton) e.getSource()).unsetPersons();
     }
 }
