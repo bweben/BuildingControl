@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="215.26757246376792" y="1897.0">com.java.view.BuildingsPanel</node>
+    <node x="193.5" y="752.0">com.java.listener.ButtonListener</node>
+    <node x="0.0" y="3252.0">com.java.model.Houses</node>
+    <node x="2083.9996376811596" y="1307.5">com.java.view.LocationPanel</node>
+    <node x="1808.0178442028985" y="2825.0">com.java.view.Display</node>
+    <node x="2427.9996376811596" y="1330.5">com.java.listener.NewBuildingListener</node>
+    <node x="713.2496376811596" y="393.5">com.java.model.Oilheater</node>
+    <node x="1870.5178442028985" y="3063.0">com.java.view.App</node>
+    <node x="488.9996376811596" y="1396.0">com.java.model.BuildingsPanelObserver</node>
+    <node x="2970.8258152173908" y="1418.5">com.java.model.Flat</node>
+    <node x="0.0" y="1307.0">com.java.view.BuildingButton</node>
+    <node x="1041.9996376811596" y="1241.0">com.java.model.Game</node>
+    <node x="4081.7633152173908" y="416.0">com.java.model.Location</node>
+    <node x="3753.7633152173908" y="371.0">com.java.model.Motor</node>
+    <node x="345.2496376811596" y="438.0">com.java.model.Heater</node>
+    <node x="295.0" y="3252.0">com.java.view.RenterPanel</node>
+    <node x="1439.7496376811596" y="0.0">com.java.model.Dimension</node>
+    <node x="2326.9996376811596" y="818.0">com.java.model.Skyscraper</node>
+    <node x="1674.083242753623" y="1765.0">com.java.view.DetailsPanel</node>
+    <node x="2634.9996376811596" y="1941.0">com.java.view.ControlsPanel</node>
+    <node x="1087.2496376811596" y="415.5">com.java.model.Woodheater</node>
+    <node x="880.7496376811596" y="89.0">com.java.interfaces.HeaterInterface</node>
+    <node x="3479.233242753623" y="1809.0">com.java.controller.HouseFactory</node>
+    <node x="1736.5178442028985" y="2410.0">com.java.view.MainFrame</node>
+    <node x="1389.2496376811596" y="393.5">com.java.model.Building</node>
+    <node x="721.6666666666667" y="862.5">com.java.interfaces.Observer</node>
+    <node x="2985.4996376811596" y="460.0">com.java.model.Person</node>
+    <node x="1433.9996376811596" y="1351.5">com.java.model.DetailsPanelObserver</node>
+    <node x="3538.8258152173908" y="1329.5">com.java.model.Houseboat</node>
+    <node x="2025.5342391304348" y="863.0">com.java.interfaces.PanelInterface</node>
+    <node x="1780.9996376811596" y="1374.0">com.java.view.RentersPanel</node>
+    <node x="3254.8258152173908" y="1418.5">com.java.model.Familyhouse</node>
+    <node x="2908.858242753623" y="708.0">com.java.model.House</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.java.view.LocationPanel" target="com.java.interfaces.PanelInterface">
+      <point x="-80.75" y="-160.5" />
+      <point x="2164.7496376811596" y="1221.0" />
+      <point x="2174.6342391304347" y="1221.0" />
+      <point x="42.59999999999991" y="71.5" />
+    </edge>
+    <edge source="com.java.model.House" target="com.java.model.Building">
+      <point x="-124.5" y="-226.5" />
+      <point x="2950.358242753623" y="668.0" />
+      <point x="1620.2496376811596" y="668.0" />
+      <point x="105.0" y="116.0" />
+    </edge>
+    <edge source="com.java.model.House" target="com.java.model.Person">
+      <point x="-41.5" y="-226.5" />
+      <point x="3033.358242753623" y="688.0" />
+      <point x="3065.3746376811596" y="688.0" />
+      <point x="-26.625" y="49.5" />
+    </edge>
+    <edge source="com.java.view.MainFrame" target="com.java.view.BuildingsPanel">
+      <point x="-132.25" y="-182.5" />
+      <point x="1868.7678442028985" y="2380.0" />
+      <point x="696.7675724637679" y="2380.0" />
+      <point x="160.5" y="160.5" />
+    </edge>
+    <edge source="com.java.model.DetailsPanelObserver" target="com.java.interfaces.Observer">
+      <point x="-81.5" y="-116.5" />
+      <point x="1515.4996376811596" y="1181.0" />
+      <point x="956.3333333333335" y="1181.0" />
+      <point x="106.66666666666663" y="72.0" />
+    </edge>
+    <edge source="com.java.model.Skyscraper" target="com.java.model.Person">
+      <point x="113.0" y="-116.5" />
+      <point x="2665.9996376811596" y="688.0" />
+      <point x="3012.1246376811596" y="688.0" />
+      <point x="-79.875" y="49.5" />
+    </edge>
+    <edge source="com.java.model.BuildingsPanelObserver" target="com.java.interfaces.Observer">
+      <point x="0.0" y="-72.0" />
+      <point x="754.9996376811596" y="1221.0" />
+      <point x="785.6666666666667" y="1221.0" />
+      <point x="-64.0" y="72.0" />
+    </edge>
+    <edge source="com.java.model.Skyscraper" target="com.java.model.Building">
+      <point x="-113.0" y="-116.5" />
+      <point x="2439.9996376811596" y="678.0" />
+      <point x="1578.2496376811596" y="678.0" />
+      <point x="63.0" y="116.0" />
+    </edge>
+    <edge source="com.java.model.Motor" target="com.java.model.Dimension">
+      <point x="0.0" y="-138.5" />
+      <point x="3907.7633152173908" y="351.0" />
+      <point x="1705.5829710144926" y="351.0" />
+      <point x="106.33333333333326" y="160.5" />
+    </edge>
+    <edge source="com.java.view.BuildingButton" target="com.java.model.Building">
+      <point x="0.0" y="-161.0" />
+      <point x="183.0" y="668.0" />
+      <point x="1410.2496376811596" y="668.0" />
+      <point x="-105.0" y="116.0" />
+    </edge>
+    <edge source="com.java.controller.HouseFactory" target="com.java.model.Person">
+      <point x="87.19999999999982" y="-248.5" />
+      <point x="3784.433242753623" y="1735.0" />
+      <point x="3985.3746376811596" y="1735.0" />
+      <point x="3985.3746376811596" y="668.0" />
+      <point x="3171.8746376811596" y="668.0" />
+      <point x="79.875" y="49.5" />
+    </edge>
+    <edge source="com.java.controller.HouseFactory" target="com.java.model.Houseboat">
+      <point x="0.0" y="-248.5" />
+      <point x="3697.233242753623" y="1745.0" />
+      <point x="3689.3258152173908" y="1745.0" />
+      <point x="0.0" y="138.5" />
+    </edge>
+    <edge source="com.java.view.DetailsPanel" target="com.java.view.LocationPanel">
+      <point x="110.5" y="-292.5" />
+      <point x="2005.583242753623" y="1735.0" />
+      <point x="2326.2496376811596" y="1735.0" />
+      <point x="80.75" y="160.5" />
+    </edge>
+    <edge source="com.java.model.Woodheater" target="com.java.interfaces.HeaterInterface">
+      <point x="0.0" y="-94.0" />
+      <point x="1228.2496376811596" y="351.0" />
+      <point x="1103.8746376811596" y="351.0" />
+      <point x="44.625" y="71.5" />
+    </edge>
+    <edge source="com.java.model.Game" target="com.java.interfaces.Observer">
+      <point x="-124.0" y="-227.0" />
+      <point x="1103.9996376811596" y="1211.0" />
+      <point x="871.0" y="1211.0" />
+      <point x="21.333333333333314" y="72.0" />
+    </edge>
+    <edge source="com.java.view.MainFrame" target="com.java.view.ControlsPanel">
+      <point x="132.25" y="-182.5" />
+      <point x="2133.2678442028982" y="2380.0" />
+      <point x="2725.7496376811596" y="2380.0" />
+      <point x="-90.75" y="116.5" />
+    </edge>
+    <edge source="com.java.view.RentersPanel" target="com.java.interfaces.PanelInterface">
+      <point x="0.0" y="-94.0" />
+      <point x="1921.9996376811596" y="1211.0" />
+      <point x="2089.4342391304344" y="1211.0" />
+      <point x="-42.60000000000002" y="71.5" />
+    </edge>
+    <edge source="com.java.controller.HouseFactory" target="com.java.model.Familyhouse">
+      <point x="-87.19999999999982" y="-248.5" />
+      <point x="3610.033242753623" y="1735.0" />
+      <point x="3386.8258152173908" y="1735.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="com.java.model.Familyhouse" target="com.java.model.House">
+      <point x="0.0" y="-49.5" />
+      <point x="3386.8258152173908" y="1221.0" />
+      <point x="3141.258242753623" y="1221.0" />
+      <point x="66.39999999999998" y="226.5" />
+    </edge>
+    <edge source="com.java.model.Houseboat" target="com.java.model.Motor">
+      <point x="75.25" y="-138.5" />
+      <point x="3764.5758152173908" y="678.0" />
+      <point x="3907.7633152173908" y="678.0" />
+      <point x="0.0" y="138.5" />
+    </edge>
+    <edge source="com.java.controller.HouseFactory" target="com.java.model.Flat">
+      <point x="-174.4000000000001" y="-248.5" />
+      <point x="3522.833242753623" y="1745.0" />
+      <point x="3102.8258152173908" y="1745.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="com.java.listener.ButtonListener" target="com.java.model.Building">
+      <point x="0.0" y="-182.5" />
+      <point x="386.5" y="678.0" />
+      <point x="1452.2496376811596" y="678.0" />
+      <point x="-63.0" y="116.0" />
+    </edge>
+    <edge source="com.java.model.Flat" target="com.java.model.House">
+      <point x="0.0" y="-49.5" />
+      <point x="3102.8258152173908" y="1221.0" />
+      <point x="3074.858242753623" y="1221.0" />
+      <point x="0.0" y="226.5" />
+    </edge>
+    <edge source="com.java.view.DetailsPanel" target="com.java.interfaces.PanelInterface">
+      <point x="-36.833333333333314" y="-292.5" />
+      <point x="1858.2499094202897" y="1715.0" />
+      <point x="2073.4996376811596" y="1715.0" />
+      <point x="2073.4996376811596" y="1221.0" />
+      <point x="2132.034239130435" y="1221.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="com.java.view.DetailsPanel" target="com.java.model.House">
+      <point x="184.16666666666674" y="-292.5" />
+      <point x="2079.24990942029" y="1745.0" />
+      <point x="2417.4996376811596" y="1745.0" />
+      <point x="2417.4996376811596" y="1221.0" />
+      <point x="3008.458242753623" y="1221.0" />
+      <point x="-66.39999999999998" y="226.5" />
+    </edge>
+    <edge source="com.java.view.BuildingsPanel" target="com.java.view.BuildingButton">
+      <point x="-267.5" y="-160.5" />
+      <point x="268.7675724637679" y="1745.0" />
+      <point x="91.5" y="1745.0" />
+      <point x="-91.5" y="161.0" />
+    </edge>
+    <edge source="com.java.model.Game" target="com.java.model.Building">
+      <point x="124.0" y="-227.0" />
+      <point x="1351.9996376811596" y="1191.0" />
+      <point x="1224.2082427536232" y="1191.0" />
+      <point x="1224.2082427536232" y="688.0" />
+      <point x="1494.2496376811596" y="688.0" />
+      <point x="-21.0" y="116.0" />
+    </edge>
+    <edge source="com.java.view.MainFrame" target="com.java.view.DetailsPanel">
+      <point x="44.083333333333485" y="-182.5" />
+      <point x="2045.101177536232" y="2390.0" />
+      <point x="2005.583242753623" y="2390.0" />
+      <point x="110.5" y="292.5" />
+    </edge>
+    <edge source="com.java.view.Display" target="com.java.view.MainFrame">
+      <point x="96.5" y="-94.0" />
+      <point x="2097.5178442028982" y="2800.0" />
+      <point x="2133.2678442028982" y="2800.0" />
+      <point x="132.25" y="182.5" />
+    </edge>
+    <edge source="com.java.view.DetailsPanel" target="com.java.model.DetailsPanelObserver">
+      <point x="-110.5" y="-292.5" />
+      <point x="1784.583242753623" y="1725.0" />
+      <point x="1596.9996376811596" y="1725.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="com.java.view.DetailsPanel" target="com.java.interfaces.Observer">
+      <point x="-184.16666666666669" y="-292.5" />
+      <point x="1710.9165760869564" y="1735.0" />
+      <point x="1031.4996376811596" y="1735.0" />
+      <point x="1031.4996376811596" y="1221.0" />
+      <point x="828.3333333333335" y="1221.0" />
+      <point x="-21.333333333333258" y="72.0" />
+    </edge>
+    <edge source="com.java.model.DetailsPanelObserver" target="com.java.model.Building">
+      <point x="81.5" y="-116.5" />
+      <point x="1678.4996376811596" y="688.0" />
+      <point x="1536.2496376811596" y="688.0" />
+      <point x="21.0" y="116.0" />
+    </edge>
+    <edge source="com.java.view.BuildingsPanel" target="com.java.listener.ButtonListener">
+      <point x="-53.5" y="-160.5" />
+      <point x="482.7675724637679" y="1745.0" />
+      <point x="386.5" y="1745.0" />
+      <point x="0.0" y="182.5" />
+    </edge>
+    <edge source="com.java.view.BuildingsPanel" target="com.java.interfaces.Observer">
+      <point x="53.5" y="-160.5" />
+      <point x="589.7675724637679" y="1735.0" />
+      <point x="478.4996376811596" y="1735.0" />
+      <point x="478.4996376811596" y="1221.0" />
+      <point x="743.0" y="1221.0" />
+      <point x="-106.66666666666674" y="72.0" />
+    </edge>
+    <edge source="com.java.view.BuildingsPanel" target="com.java.interfaces.PanelInterface">
+      <point x="267.5" y="-160.5" />
+      <point x="803.7675724637679" y="1745.0" />
+      <point x="1770.4996376811596" y="1745.0" />
+      <point x="1770.4996376811596" y="1201.0" />
+      <point x="2046.8342391304345" y="1201.0" />
+      <point x="-85.20000000000005" y="71.5" />
+    </edge>
+    <edge source="com.java.model.House" target="com.java.model.Location">
+      <point x="124.5" y="-226.5" />
+      <point x="3199.358242753623" y="688.0" />
+      <point x="4153.263315217391" y="688.0" />
+      <point x="-71.5" y="93.5" />
+    </edge>
+    <edge source="com.java.model.Oilheater" target="com.java.interfaces.HeaterInterface">
+      <point x="0.0" y="-116.0" />
+      <point x="890.2496376811596" y="351.0" />
+      <point x="1014.6246376811596" y="351.0" />
+      <point x="-44.625" y="71.5" />
+    </edge>
+    <edge source="com.java.model.Heater" target="com.java.interfaces.HeaterInterface">
+      <point x="0.0" y="-71.5" />
+      <point x="519.2496376811596" y="341.0" />
+      <point x="925.3746376811596" y="341.0" />
+      <point x="-133.875" y="71.5" />
+    </edge>
+    <edge source="com.java.view.ControlsPanel" target="com.java.listener.NewBuildingListener">
+      <point x="-90.75" y="-116.5" />
+      <point x="2725.7496376811596" y="1745.0" />
+      <point x="2683.4996376811596" y="1745.0" />
+      <point x="0.0" y="137.5" />
+    </edge>
+    <edge source="com.java.model.Building" target="com.java.interfaces.HeaterInterface">
+      <point x="-84.0" y="-116.0" />
+      <point x="1431.2496376811596" y="341.0" />
+      <point x="1193.1246376811596" y="341.0" />
+      <point x="133.875" y="71.5" />
+    </edge>
+    <edge source="com.java.view.BuildingsPanel" target="com.java.model.BuildingsPanelObserver">
+      <point x="160.5" y="-160.5" />
+      <point x="696.7675724637679" y="1745.0" />
+      <point x="754.9996376811596" y="1745.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="com.java.view.App" target="com.java.view.Display">
+      <point x="-65.25" y="-72.0" />
+      <point x="1935.7678442028985" y="3038.0" />
+      <point x="1904.5178442028985" y="3038.0" />
+      <point x="-96.5" y="94.0" />
+    </edge>
+    <edge source="com.java.model.Houseboat" target="com.java.model.House">
+      <point x="-75.25" y="-138.5" />
+      <point x="3614.0758152173908" y="1211.0" />
+      <point x="3207.658242753623" y="1211.0" />
+      <point x="132.79999999999995" y="226.5" />
+    </edge>
+    <edge source="com.java.model.Building" target="com.java.model.Dimension">
+      <point x="84.0" y="-116.0" />
+      <point x="0.0" y="160.5" />
+    </edge>
+    <edge source="com.java.controller.HouseFactory" target="com.java.model.Location">
+      <point x="174.4000000000001" y="-248.5" />
+      <point x="3871.633242753623" y="1745.0" />
+      <point x="4296.263315217391" y="1745.0" />
+      <point x="71.5" y="93.5" />
+    </edge>
+    <edge source="com.java.view.LocationPanel" target="com.java.model.House">
+      <point x="80.75" y="-160.5" />
+      <point x="2326.2496376811596" y="1211.0" />
+      <point x="2942.058242753623" y="1211.0" />
+      <point x="-132.8" y="226.5" />
+    </edge>
+    <edge source="com.java.view.ControlsPanel" target="com.java.interfaces.PanelInterface">
+      <point x="90.75" y="-116.5" />
+      <point x="2907.2496376811596" y="1745.0" />
+      <point x="2949.4996376811596" y="1745.0" />
+      <point x="2949.4996376811596" y="1201.0" />
+      <point x="2217.2342391304346" y="1201.0" />
+      <point x="85.20000000000005" y="71.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="1931.6666666666665" y="1425.1666666666665" />
+  <SelectedNodes>
+    <node>com.java.view.RentersPanel</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

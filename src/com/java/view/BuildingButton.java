@@ -4,6 +4,8 @@ import com.java.model.Building;
 import com.java.model.House;
 
 import javax.swing.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 /**
  * Created by Nathanael on 17.03.2016.

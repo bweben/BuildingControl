@@ -11,3 +11,8 @@ public class App {
         display.initUI();
     }
 }
+
+/*
+technische Klassen = berechnen etwas und geben etwas zurück, beispielsweise Math
+fachliche Klassen = verwenden technische Klassen und berechnen selbst nicht wirklich etwas, beispielsweise häufig GUI-Klassen.
+ */
