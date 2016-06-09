@@ -2,6 +2,7 @@ package com.java.model;
 
 import com.java.controller.HouseFactory;
 import com.java.interfaces.Observer;
+import com.java.testing.DB_HouseStub;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +16,7 @@ public class Game {
     private List<Observer> observers = new ArrayList<Observer>();
 
     private Game() {
+        DB_HouseStub db_houseStub = new DB_HouseStub();
         buildings = new ArrayList<Building>();
     }
 
