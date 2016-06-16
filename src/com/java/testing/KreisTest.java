@@ -14,13 +14,13 @@ public class KreisTest {
 
     @Test
     public void zeichne() throws Exception {
-        Kreis k = new Kreis(10,20,5);
+        Kreis k = new Kreis(10,20,6);
         k.zeichne(g);
         assertEquals(1,g.count);
-        assertEquals(10,g.x);
-        assertEquals(20,g.y);
-        assertEquals(5,g.height);
-        assertEquals(5,g.width);
+        assertEquals(13,g.x);
+        assertEquals(23,g.y);
+        assertEquals(3,g.height);
+        assertEquals(3,g.width);
     }
 
 }
