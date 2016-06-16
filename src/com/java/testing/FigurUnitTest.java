@@ -23,4 +23,9 @@ public class FigurUnitTest {
 
     }
 
+    @org.junit.Test
+    public void testType() throws Exception {
+        assertEquals(fp.parse().get(0).getClass(),Rechteck.class);
+    }
+
 }
