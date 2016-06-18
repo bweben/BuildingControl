@@ -6,8 +6,8 @@ import java.awt.*;
  * Created by natha on 13.06.2016.
  */
 public class Rechteck extends Figur {
-    private int hoehe;
-    private int breite;
+    public int hoehe;
+    public int breite;
 
     public Rechteck(int x, int y, int breite, int hoehe) {
         super(x,y);

@@ -6,7 +6,7 @@ import java.awt.*;
  * Created by natha on 13.06.2016.
  */
 public class Kreis extends Figur {
-    private int radius;
+    public int radius;
 
     public Kreis(int x, int y, int radius) {
         super(x,y);
